@@ -1,0 +1,40 @@
+/* Love theme — shared tokens for the MenaAmmarPro extensions. */
+:root {
+  --love-pink: #e91e63;
+  --love-pink-soft: #f8bbd0;
+  --love-pink-deep: #ad1457;
+  --love-bg: #fff7fa;
+  --love-card: #ffffff;
+  --love-ink: #3a2a33;
+  --love-muted: #8a7480;
+  --love-line: #f3d7e3;
+  --love-radius: 12px;
+  --love-shadow: 0 6px 20px rgba(233, 30, 99, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --love-bg: #241a20;
+    --love-card: #2e2129;
+    --love-ink: #f7eaf0;
+    --love-muted: #c3a7b5;
+    --love-line: #4a3340;
+    --love-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--love-ink);
+  background: var(--love-bg);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}

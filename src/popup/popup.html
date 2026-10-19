@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Love Checklist</title>
+    <link rel="stylesheet" href="../common/theme.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="cl-head">
+      <h1>Love Checklist</h1>
+      <p class="cl-sub" id="cl-count">0 of 0 done</p>
+    </header>
+
+    <main class="cl-main">
+      <form id="cl-form" class="cl-add">
+        <input
+          id="cl-input"
+          class="cl-input"
+          type="text"
+          placeholder="Add something to do together…"
+          maxlength="120"
+          autocomplete="off"
+          aria-label="New checklist item"
+        />
+        <button class="cl-btn" type="submit" title="Add item" aria-label="Add item">+</button>
+      </form>
+
+      <ul id="cl-list" class="cl-list"></ul>
+
+      <div class="cl-actions">
+        <button id="cl-clear-done" class="cl-btn-ghost" type="button">Clear done</button>
+        <button id="cl-reset" class="cl-btn-ghost" type="button">Reset</button>
+      </div>
+    </main>
+
+    <footer class="cl-foot"><span>Made for Mena ♥</span></footer>
+
+    <script src="../common/api.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

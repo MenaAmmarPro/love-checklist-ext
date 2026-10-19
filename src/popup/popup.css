@@ -1,0 +1,155 @@
+:root {
+  --cl-w: 320px;
+}
+
+body {
+  width: var(--cl-w);
+  min-height: 220px;
+}
+
+.cl-head {
+  padding: 14px 16px 8px;
+  border-bottom: 1px solid var(--love-line);
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.08), transparent);
+}
+
+.cl-head h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.cl-sub {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--love-muted);
+}
+
+.cl-main {
+  padding: 12px 16px 8px;
+}
+
+.cl-add {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.cl-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--love-line);
+  border-radius: var(--love-radius);
+  background: var(--love-card);
+  color: var(--love-ink);
+  font: inherit;
+  font-size: 13px;
+}
+
+.cl-input:focus {
+  outline: 2px solid var(--love-pink-soft);
+  outline-offset: 1px;
+}
+
+.cl-btn {
+  flex: 0 0 auto;
+  width: 36px;
+  border: none;
+  border-radius: var(--love-radius);
+  background: var(--love-pink);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: var(--love-shadow);
+}
+
+.cl-btn:hover {
+  background: var(--love-pink-deep);
+}
+
+.cl-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.cl-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 2px;
+  border-bottom: 1px dashed var(--love-line);
+}
+
+.cl-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 auto;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.cl-item input[type="checkbox"] {
+  accent-color: var(--love-pink);
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
+.cl-text {
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.cl-item.is-done .cl-text {
+  text-decoration: line-through;
+  color: var(--love-muted);
+}
+
+.cl-del {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  color: var(--love-muted);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.cl-del:hover {
+  color: var(--love-pink-deep);
+  background: rgba(233, 30, 99, 0.1);
+}
+
+.cl-actions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0 4px;
+}
+
+.cl-btn-ghost {
+  flex: 1 1 auto;
+  padding: 7px 10px;
+  border: 1px solid var(--love-line);
+  border-radius: var(--love-radius);
+  background: transparent;
+  color: var(--love-ink);
+  font-size: 12px;
+}
+
+.cl-btn-ghost:hover {
+  border-color: var(--love-pink-soft);
+  color: var(--love-pink-deep);
+}
+
+.cl-foot {
+  padding: 8px 16px 12px;
+  font-size: 11px;
+  color: var(--love-muted);
+  text-align: center;
+}
